@@ -5,6 +5,14 @@
 ![BearPi-HM_Nano.webp][1]
 # BearPi-HM_Nano开发搭建环境  
 ## 小熊派开源社区 / BearPi-HM_Nano https://gitee.com/bearpi/bearpi-hm_nano
+```
+## 从小熊派开源社区下载源码，然后使用下行命令编译
+python3 build.py BearPi-HM_Nano
+
+## 如果提示错误，需要把 python 链接到 python3
+cd /usr/bin/ && ln -s python3 python
+```
+
 ## 安装Python环境pip3包管理工具 和 wget tmux vim 等常用软件
 ```
 apt update -y \
@@ -98,6 +106,10 @@ export PATH=~/ninja:$PATH
 export PATH=~/gcc_riscv32/bin:$PATH
 alias rvcc=riscv32-unknown-elf-gcc
 ```
+
+## `rvcc -S swap.c`
+### 使用 riscv-gcc 把简单的C代码，转换成汇编指令，方便学习
+
 
 ## 源码目录简介
 

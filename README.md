@@ -107,8 +107,17 @@ export PATH=~/gcc_riscv32/bin:$PATH
 alias rvcc=riscv32-unknown-elf-gcc
 ```
 
+## 编译工具不想百度网盘下载，也可以下载华为官方的
+### https://repo.huaweicloud.com/harmonyos/compiler/
+
+```
+https://repo.huaweicloud.com/harmonyos/compiler/gcc_riscv32/7.3.0/linux/gcc_riscv32-linux-7.3.0.tar.gz
+https://repo.huaweicloud.com/harmonyos/compiler/gn/2024/linux/gn-linux-x86-20221108.tar.gz
+https://repo.huaweicloud.com/harmonyos/compiler/ninja/1.11.0/linux/ninja-linux-x86-1.11.0.tar.gz
+```
+
 ## `rvcc -S swap.c`
-### 使用 riscv-gcc 把简单的C代码，转换成汇编指令，方便学习
+### [使用 riscv-gcc 把简单的C代码，转换成汇编指令，方便学习](https://github.com/hongwenjun/riscv_learn/tree/main/CLang)
 
 
 ## 源码目录简介

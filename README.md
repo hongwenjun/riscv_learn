@@ -1,6 +1,19 @@
 # riscv_learn
 最便宜RiscV单片机开发板学RISCV汇编指令
 
+## [Debian 11.6.0 For Oracle VM VirtualBox 磁盘镜像](https://pan.baidu.com/s/1qik1PwvvpS8kNKIJ_LJTGg?pwd=2pku)  提取码: 2pku
+- 点击链接下载镜像文件 `Linux_Debian11.6.7z` 压缩包，解压得到 `Linux.vdi`，VM VirtualBox 新建一个虚拟机，挂载这个镜像，网络设置成桥接，使用分离模式启动
+```
+debian-11.6.0系统用户密码
+用户名:  riscv
+密码:    riscv
+登陆后    sudo -i  命令切换到root用户
+```
+debian-11.6.0系统用户密码
+用户名:  riscv
+密码:    riscv
+
+登陆后    sudo -i  命令切换到root用户
 
 ![BearPi-HM_Nano.webp][1]
 # BearPi-HM_Nano开发搭建环境  

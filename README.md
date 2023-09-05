@@ -281,7 +281,36 @@ mystrcpy:
 - `inc`: 将一个数加 1。
 - `dec`: 将一个数减 1。
 
+## Milk-V Duo Examples 工程提供了在Linux环境下使用C/C++开发应用的一些例子，可以在`Milk-V Duo`设备上运行
 
+## 开发环境 安装编译依赖的工具:
+```
+apt install wget git make
+```
+
+## 获取 Examples
+```
+git clone https://github.com/milkv-duo/duo-examples.git
+```
+
+## 加载编译环境
+
+```
+cd duo-examples
+source envsetup.sh
+```
+- 第一次加载会自动下载所需的SDK包，大小为180M左右，下载完会自动解压到`duo-examples`下，解压后的目录名为`duo-sdk`，下次加载时检测到已存在该目录，就不会再次下载了
+- *注: 如果因为网络原因无法完成SDK包的下载，请通过其他途径获取到`duo-sdk.tar.gz`包，手动解压到`duo-examples`目录下，重新`source envsetup.sh`*
+
+
+## 设置环境变量：vim ~/.bashrc 生效环境变量：source ~/.bashrc
+
+```
+export PATH=~/duo-examples/duo-sdk/riscv64-linux-musl-x86_64/bin:$PATH
+alias gcc=riscv64-unknown-linux-musl-gcc
+alias g++=riscv64-unknown-linux-musl-g++
+alias objdump=riscv64-unknown-linux-musl-objdump
+```
 
 ### [使用 riscv-gcc 把简单的C代码，转换成汇编指令，方便学习](https://github.com/hongwenjun/riscv_learn/tree/main/CLang)
 
